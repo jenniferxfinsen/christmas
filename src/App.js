@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route, Link, Router } from 'react-router-dom';
 import './App.css';
+import StartPage from './Start/Mobile'
+import Dashboard from './Dashboard/Mobile'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Finsen Antonius
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/start" render={() => <StartPage />}></Route>
+        <Route path="/dashboard" render={() => <Dashboard />}></Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
