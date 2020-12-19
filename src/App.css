@@ -14,7 +14,7 @@
 }
 
 .App-logo {
-  height: 77vmin;
+  height: 50vmin;
   pointer-events: none;
 }
 
@@ -32,7 +32,7 @@
 .background {
   background: #F9F0E3;
   width: 100%;
-  height: 400px;
+  height: 100px;
 }
 
 .snowman-image {
@@ -41,7 +41,7 @@
 
 .text {
   color: black;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .btn-container {
@@ -63,4 +63,27 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.main-event {
+  width: 370px;
+  height: 150px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: 170px 170px;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 150px;
+  border-radius: 4px;
 }
