@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header" style={{background: isDarkMode ? '#03174C' : 'white'}}>
-        <div className="background" style={{marginBottom: 8, background: isDarkMode ? '#03174C' : '#F9F0E3', color: isDarkMode ? 'wheat' : 'black'}}>
+        <div className="background" style={{marginBottom: 16, background: isDarkMode ? '#03174C' : '#F9F0E3', color: isDarkMode ? 'wheat' : 'black'}}>
           <h1 className="title">Jennifer x Finsen</h1>
           {/* <img src={snowman} className="App-logo" alt="snowman"></img> */}
         </div>
