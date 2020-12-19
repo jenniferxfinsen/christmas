@@ -7,15 +7,26 @@ import santa from './assets/santa.png'
 import snowman from './assets/snowman.png'
 import './App.css'
 import './App.css';
+import React, { useState } from 'react';
+
+
 
 function App() {
+  const [isDarkMode, setisDarkMode] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="background" style={{marginBottom: 24}}>
+      <header className="App-header" style={{background: isDarkMode ? '#03174C' : 'white'}}>
+        <div className="background" style={{marginBottom: 8, background: isDarkMode ? '#03174C' : '#F9F0E3', color: isDarkMode ? 'wheat' : 'black'}}>
           <h1 className="title">Jennifer x Finsen</h1>
           {/* <img src={snowman} className="App-logo" alt="snowman"></img> */}
         </div>
+        <button
+          style={{background: isDarkMode ? 'wheat' : '#03174C', color: isDarkMode ? ' #03174C' : 'wheat'}}
+          className="btn-dark"
+          onClick={() => setisDarkMode(!isDarkMode)}
+        >
+        {isDarkMode ? "Light" : "Dark"}
+        </button>
         {/* <p className="text">you are one more step closer to the surprise</p> */}
         <div className="main-event" style={{background: '#76C79E'}}>
             <img src={tree} style={{width: 200, height: 150}}></img>
